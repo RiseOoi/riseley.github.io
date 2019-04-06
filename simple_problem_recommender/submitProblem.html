@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Problem Recommender</title>
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="demo">
+        <header class="demo__header d-flex align-items-center">
+            <div class="col">
+                <a class="text-warning h1" href="./index.html">Back to Voting</a>
+            </div>
+        </header>
+        <div class="demo__content">
+            <div class="demo__card-cont">
+                <div class="card">
+                    <div class="card-header d-flex　align-items-center">
+                        <h1 style="font-size: 1.8rem">Submit Your Own Problem</h1>
+                    </div>
+                    <div class="card-body">
+                        <form id="submit-problem">
+                            <label for="datetime" class="col col-form-label" style="font-size: 1.8rem">Problem Title</label>
+                            <input type="text" class="col form-control" id="problem-title" name="problem-title" placeholder="Problem Title" style="font-size: 1.4rem">
+                            <label for="section" class="col-12 col-form-label" style="font-size: 1.8rem">Problem Description</label>
+                            <textarea type="text" class="form-control" id="problem-description" name="problem-description" placeholder="Problem Description" style="font-size: 1.4rem"></textarea>
+                            <br />
+                            <div class="d-flex　align-items-center">
+                                <a role="button" class="btn btn-lg btn-secondary" href="./index.html">
+                                    Cancel
+                                </a>
+                                <button type="submit" class="btn btn-lg btn-primary">
+                                    Submit Problem
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
